@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Volatility</title>
+</head>
+<body>
+    <h1>Stock Volatility</h1>
+    <form method="POST">
+        <label for="symbol">Enter stock symbol:</label>
+        <input type="text" id="symbol" name="symbol">
+        <input type="submit" value="Submit">
+    </form>
+    {% if plot %}
+        <div>{{ plot|safe }}</div>
+    {% endif %}
+</body>
+</html>
